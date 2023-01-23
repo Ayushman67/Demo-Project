@@ -29,7 +29,7 @@
 <body>
   <h2>Demo Dashboard</h2>
   <div>
-    <!--Add few elements to the form-->
+    <!--Adding few elements to the form-->
 
     <div>
       <input type="text" id="txtName" placeholder="Enter your name" />
@@ -54,20 +54,20 @@
   <script>
     let saveFile = () => {
 
-      // Get the data from each element on the form.
+      // Getting the data from each element on the form.
       const name = document.getElementById('txtName');
       const age = document.getElementById('txtAge');
       const email = document.getElementById('txtEmail');
       const country = document.getElementById('txtCountry');
 
-      // This variable stores all the data.
+      //  variable storeing all the data.
       let data = 
           '\r Name: ' + name.value + ' \r\n ' + 
           'Age: ' +age.value + ' \r\n ' + 
           'Email: ' + email.value + ' \r\n ' + 
           'Country: ' + country.value + ' \r\n '
 
-      // Convert the text to BLOB.
+      // Converting the text to BLOB.
       const textToBLOB = new Blob([data], { type: 'text/plain' });
       const sFileName = 'formData.txt';	   // The file to save the data.
 
